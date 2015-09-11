@@ -61,7 +61,7 @@ export LD_PRELOAD=/your/cuda/lib64/libnvblas.so
   - Clone Spark from https://github.com/avulanov/spark/tree/ann-interface-gemm
   - Compile Spark with `-Pnetlib-lgpl` flag to use native BLAS
   - Deploy Spark on N-node cluster
-  - Download mnist dataset: http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/multiclass/mnist.scale.bz2 
+  - Download [mnist dataset](http://www.csie.ntu.edu.tw/~cjlin/libsvmtools/datasets/multiclass/mnist.scale.bz2) and decompress to `data/mllib/mnist.scale`
 
 ### Caffe
   - Download Caffe
