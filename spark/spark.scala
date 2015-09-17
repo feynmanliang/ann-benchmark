@@ -12,11 +12,14 @@ val numNodes= 5
 // number of iterations to run
 val numIterations = 5
 
+-// block size, ~10K is good for GPU
+-val blockSize = 10000
+
 val trainData = MLUtils.loadLibSVMFile(sc, "data/mllib/mnist.scale")
 val layers = Array[Int](780, 2500, 2000, 1500, 1000, 500, 10)
 val estimator = new MultilayerPerceptronClassifier()
   .setLayers(layers)
-  .setBlockSize(128)
+  .setBlockSize(blockSize)
   .setMaxIter(numIterations)
   .setSeed(11L)
 
